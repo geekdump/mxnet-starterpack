@@ -116,7 +116,7 @@ wd = 0.0001
 lr_factor = 0.75
 lr_steps = [10, 20, 30, np.inf]
 
-num_gpus = 1
+num_gpus = len(mx.test_utils.list_gpus())
 num_workers = 8
 ctx = [mx.gpu(i) for i in range(num_gpus)] if num_gpus > 0 else [mx.cpu()]
 batch_size = per_device_batch_size * max(num_gpus, 1)
