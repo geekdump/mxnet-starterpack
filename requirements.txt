@@ -1,0 +1,5 @@
+# mxnet  # cpu-only basic
+mxnet-mkl  # cpu-only optimized
+# mxnet-cu100mkl  # gpu optimized
+gluoncv
+tqdm
